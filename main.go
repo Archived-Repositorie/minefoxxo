@@ -19,14 +19,6 @@ func redirect(rw http.ResponseWriter, r *http.Request) {
 	http.Redirect(rw, r, "/site", req)
 }
 
-func index(rw http.ResponseWriter, r *http.Request) {
-	file, err := ioutil.ReadFile("show/index.html")
-
-	errorHTML(err, rw)
-
-	fmt.Fprint(rw, string(file))
-}
-
 
 func main() {
 	port := ":8080"
