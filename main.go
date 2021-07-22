@@ -32,13 +32,13 @@ func main() {
 	port := ":8080"
 	src := http.FileServer(http.Dir("source"))
 	img := http.FileServer(http.Dir("images"))
-  show := http.FileServer(http.Dir("show"))
+  	show := http.FileServer(http.Dir("show"))
 
 	go fmt.Printf("Listening on port %v", port[1:])
 
 	http.Handle("/source/", http.StripPrefix("/source", src))
 	http.Handle("/images/", http.StripPrefix("/images", img))
-  http.Handle("/site/", http.StripPrefix("/site", show)) 
+  	http.Handle("/site/", http.StripPrefix("/site", show)) 
 	// http.HandleFunc("/index", index)
 	http.HandleFunc("/", redirect) 
 
