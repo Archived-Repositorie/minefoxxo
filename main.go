@@ -48,12 +48,3 @@ func main() {
 		fmt.Println(err)
 	}
 }
-
-//rozumiesz wszystko?
-//rozumiem costam
-
-//no powiem tyle ciezko mi zrozumiec, tak jakbym mial cos zrobic w c++ nie wiedzac nic o nim poza tym jak sie nazywa
-//chyba nie bede mogl ci pomoc bo tylko bede przeszkadzal. zwlaszcza ze nic nie wiem o golangu
-//oh ok
-//sory serio, bym pomogl ale to bedzie bol dla mnie w rozumieniu i dla ciebie w tlumaczeniu mi tego/pracowaniu ze mna :/
-// :/

@@ -36,6 +36,7 @@ a, a:hover, a:focus, a:active, a:link {
   top: -10px;
 }
 
+
 .mc {
   outline: 2px solid black;
   position: relative;
@@ -103,6 +104,15 @@ a, a:hover, a:focus, a:active, a:link {
     font-size: 5cm;
 }
 
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 150px;
+  height: 150px;
+  border: solid 1px red;
+}
+
 @media screen and (max-width: 1066px) {
     #text-title {
         font-size: 3cm;
@@ -131,4 +141,15 @@ a, a:hover, a:focus, a:active, a:link {
         margin-left: 20px;
         margin-right: 20px;
     }
+}
+
+@media (min-width: 768px ) {
+  .row {
+      position: relative;
+  }
+
+  .bottom-align-text {
+    position: absolute;
+    bottom: 10px;
+  }
 }
