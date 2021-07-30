@@ -135,7 +135,7 @@ a, a:hover, a:focus, a:active, a:link {
     }
 }
 
-@media (min-width: 768px ) {
+@media (min-width: 991px ) {
   .row {
       position: relative;
   }
