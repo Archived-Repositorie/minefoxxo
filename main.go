@@ -24,14 +24,15 @@ func main() {
 	port := ":8080"
 	src := http.FileServer(http.Dir("source"))
 	img := http.FileServer(http.Dir("images"))
-  	show := http.FileServer(http.Dir("show"))
+  show := http.FileServer(http.Dir("show"))
+  download := http.FileServer(http.Dir("download"))
 
 	go fmt.Printf("Listening on port %v", port[1:])
 
 	http.Handle("/source/", http.StripPrefix("/source", src))
 	http.Handle("/images/", http.StripPrefix("/images", img))
-  	http.Handle("/site/", http.StripPrefix("/site", show)) 
-	// http.HandleFunc("/index", index)
+  http.Handle("/site/", http.StripPrefix("/site", show)) 
+  http.Handle("/download/", http.StripPrefix("/download", download))
 	http.HandleFunc("/", redirect) 
 
 	err := http.ListenAndServe(port, nil)

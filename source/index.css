@@ -1,7 +1,4 @@
-:root {
-  
-}
-
+/* Tags */
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +11,9 @@ a, a:hover, a:focus, a:active, a:link {
   text-decoration: none;
   color: inherit;
 }
+/* Tags */
 
+/* Ids */
 #title {
   margin-top: 10px;
   text-align: center;
@@ -26,17 +25,28 @@ a, a:hover, a:focus, a:active, a:link {
   text-shadow:  2px 2px #4C4C4C, 5px 5px #4e4e4e;
 }
 
-#text-description {
-  font-family: 'MinecraftiaRegular';  
-  font-weight: normal;
-  font-style: normal; 
-  font-size: 20px;
-  text-shadow:  2px 1px #000000;
-  color: #AAA;
-  top: -10px;
+#options {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal; 
 }
 
+#main-site {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal; 
+}
+/* Ids */
 
+/* Classes */
 .mc {
   outline: 2px solid black;
   position: relative;
@@ -76,26 +86,6 @@ a, a:hover, a:focus, a:active, a:link {
     color: #FFFFA0;
 }
 
-#options {
-    position: relative;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'MinecraftiaRegular';
-    font-weight: normal;
-    font-style: normal; 
-}
-
-#main-site {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'MinecraftiaRegular';
-    font-weight: normal;
-    font-style: normal; 
-}
-
 .col-lg {
     margin-top: 10px;
 }
@@ -112,7 +102,9 @@ a, a:hover, a:focus, a:active, a:link {
   height: 150px;
   border: solid 1px red;
 }
+/* Classes */
 
+/* Responsive */
 @media screen and (max-width: 1066px) {
     #text-title {
         font-size: 3cm;
@@ -153,3 +145,4 @@ a, a:hover, a:focus, a:active, a:link {
     bottom: 10px;
   }
 }
+/* Responsive */
