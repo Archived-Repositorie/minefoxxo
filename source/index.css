@@ -35,7 +35,17 @@ a, a:hover, a:focus, a:active, a:link {
     font-style: normal; 
 }
 
-#main-site {
+#main {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal; 
+}
+
+#bottom {
     position: relative;
     margin-top: 20px;
     margin-left: 50px;

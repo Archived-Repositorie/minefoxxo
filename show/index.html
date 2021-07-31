@@ -34,39 +34,21 @@
 		<!-- Buttons in options -->
 		<div id="options" class="p-4 mh-50 mb-2 bg-light shadow-lg bg-body">
 			<a class="mc fs-5" role="button" href="/site"><span>Main</span></a>
-      <a class="mc fs-5" role="button" href="/site/modpacks"><span>Modpacks</span></a>
       <a class="mc fs-5" role="button" href="/site/addons"><span>Addons</span></a>
       <a class="mc fs-5" role="button" href="/site/datapacks"><span>Datapacks</span></a>
+      <a class="mc fs-5" role="button" href="/site/modpacks"><span>Modpacks</span></a>
       <a class="mc fs-5" role="button" href="/site/mods"><span>Mods</span></a>
-      <a class="mc fs-5" role="button" href="/site/shaders"><span>Shaders</span></a>
       <a class="mc fs-5" role="button" href="/site/plugins"><span>Plugins</span></a>
+      <a class="mc fs-5" role="button" href="/site/shaders"><span>Shaders</span></a>
       <a class="mc fs-5" role="button" href="/site/txt"><span>Texturepacks</span></a>
       <a class="mc fs-5" role="button" href="/site/worlds"><span>Worlds</span></a>
     </div>
     <!-- Site -->
-    <div id="main-site" class="p-4 mh-50 mb-2 bg-light shadow-lg bg-body">
-      <!-- Modpacks -->
-      <div id="modpacks" class="row">
-        <h1 class="text-center">
-            Modpacks
-        </h1>
-        <div class="col-lg">
-          <img class="img-fluid mx-auto d-block" src="/images/modpack_icon.png" width="509" height="510">
-        </div>
-        <div class="col-lg">
-            <h3>
-                        List of my or someone modpacks for Forge (1.1 - 1.17) or Fabric (1.14 - Snapshots).</br> Modpacks are packs of mods for Minecraft Java Edition. 
-            </h3>
-        <div class="bottom-align-text">
-          <h1>
-            <a class="mc fs-5" role="button" href="/site/modpacks"><span>Check it!</span></a>
-            <a class="mc fs-5" role="button" href="/site/modpacks"><span>How to install?</span></a>
-          </h1>
-        </div>
-        </div>
-      </div>
-      <!-- Addons -->
-      <div id="addons" class="row">
+    <div id="main-site">
+      <!-- Main -->
+      <div id="main" class="bg-light shadow-lg bg-body p-4 mh-50 mb-2">
+        <!-- Addons -->
+        <div id="addons" class="row">
         <h1 class="text-center">
           Addons
         </h1>
@@ -80,13 +62,15 @@
         <div class="bottom-align-text">
           <h1>
             <a class="mc fs-5" role="button" href="/site/addons"><span>Check it!</span></a>
-            <a class="mc fs-5" role="button" href="/site/addons"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank" 
+            href="https://www.youtube.com/watch?v=cd0bnbNX9Ag"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank" href="https://www.microsoft.com/p/minecraft-for-windows-10/9nblggh2jhxj"><span>Minecraft: Windows 10 Edition</span></a>
           </h1>
         </div>
         </div>
-      </div>
-      <!-- Datapacks -->
-      <div id="datapacks" class="row">
+        </div>
+        <!-- Datapacks -->
+        <div id="datapacks" class="row">
         <h1 class="text-center">
             Datapacks
         </h1>
@@ -100,13 +84,36 @@
         <div class="bottom-align-text">
           <h1>
             <a class="mc fs-5" role="button" href="/site/datapacks"><span>Check it!</span></a>
-            <a class="mc fs-5" role="button" href="/site/datapacks"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank"  href="https://minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack"><span>How to install?</span></a>
           </h1>
         </div>
         </div>
-      </div>
-      <!-- Mods -->
-      <div id="mods" class="row">
+        </div>
+        <!-- Modpacks -->
+        <div id="modpacks" class="row">
+        <h1 class="text-center">
+            Modpacks
+        </h1>
+        <div class="col-lg">
+          <img class="img-fluid mx-auto d-block" src="/images/modpack_icon.png" width="509" height="510">
+        </div>
+        <div class="col-lg">
+            <h3>
+                        List of my or someone modpacks for Forge (1.1 - 1.17) or Fabric (1.14 - Snapshots).</br> Modpacks are packs of mods for Minecraft Java Edition. 
+            </h3>
+        <div class="bottom-align-text">
+          <h1>
+            <a class="mc fs-5" role="button" href="/site/modpacks"><span>Check it!</span></a>
+            <a class="mc fs-5" role="button" target="_blank"
+            href="https://youtu.be/FZfI1MaDrTE"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank"
+            href="https://gdevs.io/"><span>GDLauncher</span></a>
+          </h1>
+        </div>
+        </div>
+        </div>
+        <!-- Mods -->
+        <div id="mods" class="row">
         <h1 class="text-center">
             Mods
         </h1>
@@ -120,33 +127,15 @@
         <div class="bottom-align-text">
           <h1>
             <a class="mc fs-5" role="button" href="/site/mods"><span>Check it!</span></a>
-            <a class="mc fs-5" role="button" href="/site/mods"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank" href="https://youtu.be/cZQSjezflJY"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank"
+            href="https://files.minecraftforge.net/net/minecraftforge/forge/"><span>Forge</span></a>
           </h1>
         </div>
         </div>
-      </div>
-      <!-- Shaders -->
-      <div id="shaders" class="row">
-        <h1 class="text-center">
-            Shaders
-        </h1>
-        <div class="col-lg">
-          <img class="img-fluid mx-auto d-block" src="/images/shaders_icon.png" width="509" height="510">
         </div>
-        <div class="col-lg">
-            <h3>
-              List of my or someone shaders for optifine.</br> Changes how light looks and changes texturs plus it adds textur mechanics
-            </h3>
-        <div class="bottom-align-text">
-          <h1>
-            <a class="mc fs-5" role="button" href="/site/shaders"><span>Check it!</span></a>
-            <a class="mc fs-5" role="button" href="/site/shaders"><span>How to install?</span></a>
-          </h1>
-        </div>
-        </div>
-      </div>
-      <!-- Plugins -->
-      <div id="plugins" class="row">
+        <!-- Plugins -->
+        <div id="plugins" class="row">
         <h1 class="text-center">
             Plugins
         </h1>
@@ -160,13 +149,37 @@
         <div class="bottom-align-text">
           <h1>
             <a class="mc fs-5" role="button" href="/site/plugins"><span>Check it!</span></a>
-            <a class="mc fs-5" role="button" href="/site/plugins"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button"  target="_blank" href="https://youtu.be/RCwr5Rqbif0" ><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank"
+            href="https://www.spigotmc.org/"><span>SpigotMC</span></a>
           </h1>
         </div>
         </div>
-      </div>
-      <!-- Texturepacks -->
-      <div id="txt" class="row">
+        </div>
+        <!-- Shaders -->
+        <div id="shaders" class="row">
+        <h1 class="text-center">
+            Shaders
+        </h1>
+        <div class="col-lg">
+          <img class="img-fluid mx-auto d-block" src="/images/shaders_icon.png" width="509" height="510">
+        </div>
+        <div class="col-lg">
+            <h3>
+              List of my or someone shaders for optifine.</br> Changes how light looks and changes texturs plus it adds textur mechanics
+            </h3>
+        <div class="bottom-align-text">
+          <h1>
+            <a class="mc fs-5" role="button" href="/site/shaders"><span>Check it!</span></a>
+            <a class="mc fs-5" role="button" target="_blank" href="https://youtu.be/bGlFxJn_BhY"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank"
+            href="https://www.optifine.net/"><span>OptiFine</span></a>
+          </h1>
+        </div>
+        </div>
+        </div>
+        <!-- Texturepacks -->
+        <div id="txt" class="row">
         <h1 class="text-center">
             Texturepacks
         </h1>
@@ -179,14 +192,14 @@
             </h3>
         <div class="bottom-align-text">
           <h1>
-            <a class="mc fs-5" role="button" href="/site/plugins"><span>Check it!</span></a>
-            <a class="mc fs-5" role="button" href="/site/plugins"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank"><span>Check it!</span></a>
+            <a class="mc fs-5" role="button" target="_blank" href="https://www.planetminecraft.com/blog/how-to-install-minecraft-texture-packs-4615399/"><span>How to install?</span></a>
           </h1>
         </div>
         </div>
-      </div>
-      <!-- Worlds -->
-      <div id="worlds" class="row">
+        </div>
+        <!-- Worlds -->
+        <div id="worlds" class="row">
         <h1 class="text-center">
             Worlds
         </h1>
@@ -200,10 +213,18 @@
         <div class="bottom-align-text">
           <h1>
             <a class="mc fs-5" role="button" href="/site/worlds"><span>Check it!</span></a>
-            <a class="mc fs-5" role="button" href="/site/worlds"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank" href="https://youtu.be/By-LC0PgCCI"><span>How to install?</span></a>
+            <a class="mc fs-5" role="button" target="_blank" href="https://www.minecraft.net/"><span>Minecraft: Java Edition</span></a>
           </h1>
         </div>
         </div>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div id="bottom" class="p-4 mh-50 mb-2 bg-light shadow-lg bg-body">
+        <h1 class="text-center">
+            
+        </h1>
       </div>
     </div>
   </div>
