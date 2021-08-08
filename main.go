@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"io/ioutil"
+	"net/http"
 	"strings"
 )
 
@@ -19,21 +19,20 @@ func redirect(rw http.ResponseWriter, r *http.Request) {
 	http.Redirect(rw, r, "/site", req)
 }
 
-
 func main() {
 	port := ":8080"
 	src := http.FileServer(http.Dir("source"))
 	img := http.FileServer(http.Dir("images"))
-  show := http.FileServer(http.Dir("show"))
-  download := http.FileServer(http.Dir("download"))
+	show := http.FileServer(http.Dir("show"))
+	download := http.FileServer(http.Dir("download"))
 
 	go fmt.Printf("Listening on port %v", port[1:])
 
 	http.Handle("/source/", http.StripPrefix("/source", src))
 	http.Handle("/images/", http.StripPrefix("/images", img))
-  http.Handle("/site/", http.StripPrefix("/site", show)) 
-  http.Handle("/download/", http.StripPrefix("/download", download))
-	http.HandleFunc("/", redirect) 
+	http.Handle("/site/", http.StripPrefix("/site", show))
+	http.Handle("/download/", http.StripPrefix("/download", download))
+	http.HandleFunc("/", redirect)
 
 	err := http.ListenAndServe(port, nil)
 
