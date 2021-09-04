@@ -1,3 +1,3 @@
-module main
+module minefoxxo
 
 go 1.14
